@@ -1,0 +1,389 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center; 
+}
+
+body{
+  background-image: url(./bc3.png); 
+  background-size: 1400px 2200px;
+}
+.container {
+  align-items: center; 
+  height: 360px;
+  width: 1365px;
+  margin-left: -50px;
+  background-size: 1400px 500px;
+  background-image: url(./bc2.png) ;
+  margin-top: -38px;
+  align-items: center;
+
+  
+}
+
+.imgr{
+ 
+  align-items: center;
+  top: 20px;
+  position: relative;
+
+}
+
+.imgr img{
+  width: 450px;
+  height: 400px; /* tamaño del div donde estan las imagenes*/
+
+}
+.container .img2{
+  height: 150px;
+  width: 200px;
+  transform: translate(450px,-160px) rotate(-3deg); /* movimiento del logo*/
+  z-index: 3;
+
+
+}
+.ban form {
+margin-top: -10px; /* div del buscar*/
+position: absolute;
+z-index: 1;
+left: 370px;
+
+}
+
+.container h1{
+  font-family: 'Fira Code', monospace;  /* div del mensaje bienvenidos*/
+  color: #8EFF8B;
+  font-size: 42px;
+  font-weight: lighter;
+  margin-top: 100px;
+
+}
+form{
+  display: flex;
+  justify-content: center; 
+ 
+}
+
+.ban button i {
+  width: 60px;
+  
+}
+
+.ban form input{
+ 
+  width: 400px;
+  height: 60px;
+  font-family: 'Fira Code', monospace;
+  color: #FBFBFB ;
+  font-size: 20px;
+  background-color: transparent;
+  border: 3px solid #88f585;
+  text-align: center;
+  }
+
+  .ban button{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+    width: 215px;
+    height: 68px;
+    font-family: 'Fira Code', monospace;
+    font-size: 20px;
+    color: #FBFBFB;
+    border: 3px solid #88f585;
+    border-radius: 0%;
+    background-color: #548b51;
+    border-left: 0px;
+    font-family: 'Fira Code', monospace;
+    }
+
+  .ban button:hover {
+    background-color:  #8EFF8B;
+    border: 3px solid rgba(142, 255, 139, 0.5);
+    color: black;
+    font-family: 'Fira Code', monospace;
+    border-left: 0px;
+    }
+
+  .title{
+    margin-top: 390px;
+    font-family: 'Fira Code', monospace;  /* div de la busqueda inicial*/
+    color: #FBFBFB ;
+    font-size: 20px;
+
+    }
+
+    .chars{
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 1200px;
+
+    }
+
+  .chars ul{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+   justify-content: space-evenly;
+  gap: 40px;
+  width: 600px;
+  color: #FBFBFB ;
+    }
+
+    article{
+      border: 2px solid #8EFF8B;
+      gap: 20px;
+      height: 480px;
+      width: 300px;
+    }
+
+  article img{
+    height: 300px;
+    margin-top: -16px;
+  
+  }
+
+article .stats{
+ 
+  width: 215px;
+    height: 28px;
+    font-size: 20px;
+    color: #FBFBFB;
+    border: 3px solid #88f585;
+    border-radius: 0%;
+    background-color: black;
+    font-family: 'Fira Code', monospace;
+    margin-left: -110px;
+    position: absolute;
+    margin-top: 225px;
+    
+}
+
+
+article .stats:hover {
+  background-color:  #8EFF8B;
+  border: 3px solid rgba(142, 255, 139, 0.5);
+  color: black;
+  font-family: 'Fira Code', monospace;
+  border-left: 0px;
+  }
+article h2{
+  
+  font-family: 'Fira Code', monospace;
+  font-size: 20px;
+  justify-content: center;
+  border-bottom:1px solid gray;
+  width: 300px;
+  margin-top: -10px;
+}
+
+article .names{
+  padding-left: 30px;
+  text-align: left;
+
+}
+
+article .description{
+  width: 300px;
+  font-size: 16px;
+  color: #FBFBFB;
+  border-radius: 0%;
+  font-family: 'Fira Code', monospace;
+  position: absolute;
+ align-content: left;
+   
+}
+article .description p{
+
+  padding-left: 30px;
+  text-align: left;
+ 
+}
+
+
+
+.circle {
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+
+}
+
+
+.stats.alive .circle {
+  background-color: #00FF66;
+}
+
+.stats.dead .circle {
+  background-color: #FF0000;
+}
+
+.stats.unknown .circle {
+  background-color: #999999;
+}
+.pagination{
+  width: auto;
+  align-items: center ;
+  padding-right: 34px;
+}
+.pagination button{
+  background-color: transparent;
+  width: auto;
+  color: #FBFBFB;
+  margin: 8px ;
+  font-family: 'Fira Code', monospace;
+  font-weight: lighter;
+  font-size: 20px;  
+  
+}
+
+.pagination button:hover {
+  background-color:  #8EFF8B;
+  border: 1px solid rgba(142, 255, 139, 0.5);
+  font-family: 'Fira Code', monospace;
+ 
+
+  }
+@media (max-width: 1000px) {
+  .container {
+    width: 100%;
+  }
+
+  .row-1 {
+    left: -400px;
+   display: grid;
+   align-items: normal;
+  }
+
+  .container .wet{
+    width: 200px;
+    margin-top: 30px;
+    margin-left: 50px;
+   
+  }
+  .container .switch{
+
+  top: -108px;
+  left: 500px;
+  }
+
+  .container .search{
+    width: 500px;
+    left: 200px;
+    margin-left: 38px;
+    margin-top: 40px;
+  }
+
+  .row-2 {
+    display: block;
+   
+  }
+  #wrapper{
+    flex-direction: column;
+    left: -400px;
+
+  }
+
+  #wrapper #div1{
+    height: 340px;
+    width: 450px;
+    align-items: flex-start;
+  }
+
+}
+
+
+@media (max-width: 700px) {
+  body{
+    width: 80%;
+  }
+  .container {
+    width: 80%;
+    
+  }
+
+  .row-1 {
+    left: 200px;
+   display: grid;
+   align-items: normal;
+  }
+
+
+  .container .wet{
+    width: 140px;
+    margin-top: 30px;
+    margin-left: 5px;
+
+   
+  }
+  .container .switch{
+
+  top: -108px;
+  left: 255px;
+  }
+
+  .container .search input{
+
+ width:310px;
+ left: -200px;
+  }
+
+  .container .search{
+  
+    margin-left: -15px;
+  }
+
+  .row-2 {
+   
+ width: 80%;
+ margin-left: 100px;
+  }
+  #wrapper{
+    
+    left: -450px;
+    font-size: 15px;
+    width: 80%;
+  }
+
+  #wrapper #div1{
+    height: 300px;
+    width: 345px;
+
+
+  }
+
+  #wrapper #div4{
+  top: -20px;
+  left: 475px;
+  font-size: 13px;
+     
+  }
+
+  #wrapper #div3{
+    height: 200px;
+    width: 150px;
+    top: 5px;
+    margin-left: -83px;
+    
+  }
+
+  #wrapper #div2{
+ 
+  margin-left: -90px;
+  top: 210px  
+  }
+
+  #wrapper #div5{
+  left: 485px;
+  height: 250px;
+   display: flex;
+   width: 200px;
+
+}
+
+
+
+}
